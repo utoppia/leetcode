@@ -4,7 +4,7 @@ class Solution:
         # heap and set
         queue = [1]
         cur = None
-        s = set(1)
+        s = set([1])
         for _ in range(n):
             cur = heappop(queue)
             if 2 * cur not in s:
