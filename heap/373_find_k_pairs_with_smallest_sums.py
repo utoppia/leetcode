@@ -14,5 +14,5 @@ class Solution:
       ans.append([nums1[i], a])
       index += 1
       if i + 1 < n:
-        heapq.heappush(nums1[i+1] + a, i+1, a)
+        heapq.heappush(heap, (nums1[i+1] + a, i+1, a))
     return ans
