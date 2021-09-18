@@ -22,3 +22,4 @@ class Solution:
 
     for i in range(n + m):
       nums1[i] = tmp[i]
+
