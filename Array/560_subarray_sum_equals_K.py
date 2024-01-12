@@ -1,3 +1,6 @@
+from typing import List
+
+
 class Solution:
     def subarraySum(self, nums: List[int], k: int) -> int:
         # preffix-sum and hash table
@@ -12,8 +15,8 @@ class Solution:
         pos[0] = 1
         for a in s:
             if a - k in pos:
-                ans += pos[a-k]
-            
+                ans += pos[a - k]
+
             if a not in pos:
                 pos[a] = 1
             else:
